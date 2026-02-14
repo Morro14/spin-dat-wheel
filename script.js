@@ -36,7 +36,6 @@ const WOW_CLASS_DATA = {
 const choicesInit = Object.keys(WOW_CLASS_COLORS);
 
 let choicesCurrent = Object.keys(WOW_CLASS_COLORS);
-
 const choicesFormattedEntries = choicesInit.map((e) => {
   return [e, formatClassName(e)];
 });
