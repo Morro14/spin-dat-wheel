@@ -1,0 +1,63 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap"
+    rel="stylesheet"
+  />
+  <title>Spin dat wheel</title>
+</head>
+<body>
+  <h1>WoW Midnight Class Draft</h1>
+  <div id="container-main">
+    <button id="spin-btn">Spin</button>
+    <div id="container-players"></div>
+    <div id="canvas-arrow-container">
+      <canvas id="wheel" width="550" height="550"></canvas>
+      <div id="wheel-arrow">
+        <svg
+          width="37"
+          height="28"
+          viewBox="0 0 37 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 13.5C16.454 9.08595 24.5962 6.14765 37 1.45683e-07V27C23.7191 20.4643 15.4934 17.6433 0 13.5Z"
+            fill="#D9D9D9"
+            stroke="#E43D3D"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div id="choices-eliminated-header">Eliminated classes:</div>
+  <div id="choices-eliminated-container">
+    <span id="choices-eliminated-placeholder">nothing yet</span>
+  </div>
+  <div class="filter-header" id="remove-class-header">Filter classes</div>
+  <form id="remove-class-form">
+    <div class="form-input-container" id="remove-class-input-container"></div>
+    <button id="remove-class-btn">Apply filter</button>
+    <div class="filtered-info" id="remove-class-info"></div>
+  </form>
+  <div class="filter-header" id="remove-role-header">Filter roles</div>
+  <form id="remove-role-form">
+    <div class="form-input-container" id="remove-role-input-container"></div>
+    <button id="remove-role-btn">Apply filter</button>
+    <div class="filtered-info" id="remove-role-info"></div>
+  </form>
+  <button id="reset-btn">Reset the wheel</button>
+  <div id="result-bg"></div>
+  <div id="result-container">
+    <div id="result-header">Eliminate...</div>
+    <p id="result-text"></p>
+    <button id="result-continue-btn">Continue</button>
+  </div>
+  <
+  <script src="script.js"></script>
+</body>
