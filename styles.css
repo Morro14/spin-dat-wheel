@@ -15,11 +15,19 @@ body {
   font-weight: normal;
 }
 @media (width <= 40rem) {
-  #container-main {
-    max-width: px;
-  }
   #wheel {
     scale: 60%;
+  }
+  #container-main {
+    width: 340px;
+  }
+  #canvas-arrow-container {
+    height: 340px;
+    width: 340px;
+  }
+  #wheel-arrow {
+    scale: 60%;
+    top: 154px;
   }
   .form-input-container {
     /* display: grid; */
@@ -32,6 +40,9 @@ body {
   }
 }
 @media (width >= 40rem) {
+  #wheel-arrow {
+    top: 261px;
+  }
   .form-input-container {
     grid: auto-flow / 1fr 1fr 1fr;
     /* display: grid; */
@@ -154,8 +165,8 @@ label {
 }
 #canvas-arrow-container {
   position: relative;
-  width: 550px;
-  height: 550px;
+  /* width: 550px; */
+  /* height: 550px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,6 +177,5 @@ label {
 #wheel-arrow {
   position: absolute;
   color: var(--color-text);
-  top: 261px;
   right: -14px;
 }
