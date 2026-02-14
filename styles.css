@@ -14,7 +14,34 @@ body {
   font-family: "Sniglet", sans-serif;
   font-weight: normal;
 }
-
+@media (width <= 40rem) {
+  #container-main {
+    max-width: px;
+  }
+  #wheel {
+    scale: 60%;
+  }
+  .form-input-container {
+    /* display: grid; */
+    /* width: 418px; */
+    /* gap: 1rem; */
+    grid: auto-flow / 1fr 1fr;
+  }
+  .form-input-container {
+    width: 320px;
+  }
+}
+@media (width >= 40rem) {
+  .form-input-container {
+    grid: auto-flow / 1fr 1fr 1fr;
+    /* display: grid; */
+    /* width: 418px; */
+    /* gap: 1rem; */
+  }
+  .form-input-container {
+    width: 418px;
+  }
+}
 form {
   margin-top: 1rem;
   display: flex;
@@ -23,15 +50,14 @@ form {
 }
 .form-input-container {
   display: grid;
-  width: 418px;
-  grid: auto-flow / 1fr 1fr 1fr;
+  /* grid: auto-flow / 1fr 1fr 1fr; */
   gap: 1rem;
 }
-#remove-role-input-container {
-  display: grid;
-  grid: auto-flow / 1fr 1fr 1fr;
-  gap: 1rem;
-}
+/* #remove-role-input-container { */
+/*   display: grid; */
+/*   grid: auto-flow / 1fr 1fr 1fr; */
+/*   gap: 1rem; */
+/* } */
 h1,
 h2,
 h3,
