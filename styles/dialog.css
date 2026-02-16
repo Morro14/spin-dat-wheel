@@ -1,0 +1,30 @@
+#dialog-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  opacity: 70%;
+}
+#dialog-container {
+  position: absolute;
+  top: 40%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-bg);
+  min-width: 200px;
+  padding: 1rem 2rem;
+}
+#dialog-header {
+  font-size: 18px;
+}
+#dialog-text {
+  font-size: 32px;
+}
+.dialog-btn {
+  font-size: 18px;
+}

@@ -2,7 +2,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/dialog.css" />
+  <link rel="stylesheet" href="./styles/filters.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -39,28 +41,17 @@
   <button id="reset-btn">
     <span style="color: #e43d3d; margin-right: 4px">✘</span>Reset the wheel
   </button>
-  <div id="choices-eliminated-header">Eliminated classes:</div>
+  <div id="choices-eliminated-header">Classes eliminated:</div>
   <div id="choices-eliminated-container">
     <span id="choices-eliminated-placeholder">nothing yet</span>
   </div>
-  <div class="filter-header" id="remove-class-header">Filter classes</div>
-  <form id="remove-class-form">
-    <div class="form-input-container" id="remove-class-input-container"></div>
-    <button id="remove-class-btn">Apply filter</button>
-    <div class="filtered-info" id="remove-class-info"></div>
-  </form>
-  <div class="filter-header" id="remove-role-header">Filter roles</div>
-  <form id="remove-role-form">
-    <div class="form-input-container" id="remove-role-input-container"></div>
-    <button id="remove-role-btn">Apply filter</button>
-    <div class="filtered-info" id="remove-role-info"></div>
-  </form>
-  <div id="result-bg"></div>
-  <div id="result-container">
-    <div id="result-header">Eliminate...</div>
-    <p id="result-text"></p>
-    <button id="result-continue-btn">Continue</button>
+  <div id="filter-container"></div>
+  <div id="dialog-bg"></div>
+  <div id="dialog-container">
+    <div id="dialog-header">Eliminate...</div>
+    <p id="dialog-text"></p>
+    <div id="dialog-button-container"></div>
   </div>
   <
-  <script src="script.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
