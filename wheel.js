@@ -28,7 +28,7 @@ export function drawWheel(rotation = 0, choices) {
     ctx.fill();
     ctx.textAlign = "center";
     ctx.fillStyle = "#20242d";
-    ctx.font = `24px "Sniglet"`;
+    ctx.font = `24px "Sniglet font-sans"`;
     ctx.fillText("No classes", centerX, centerY);
     return;
   }
