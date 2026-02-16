@@ -46,11 +46,21 @@ h3,
 span h5 {
   font-weight: normal;
 }
-#container-main {
-  margin: 2rem 0;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#container-header {
+  text-align: center;
+}
+#container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  max-width: 550px;
 }
 #choices-eliminated-container {
   display: flex;
@@ -66,9 +76,6 @@ span h5 {
 }
 #choices-eliminated-header {
   font-size: 24px;
-}
-.filter-header {
-  margin-top: 2rem;
 }
 button {
   background-color: #515c7a;
@@ -100,9 +107,6 @@ label {
 #remove-choice-btn {
   font-size: 18px;
 }
-#reset-btn {
-  margin-bottom: 2rem;
-}
 #canvas-arrow-container {
   position: relative;
   /* width: 550px; */
@@ -118,4 +122,11 @@ label {
   position: absolute;
   color: var(--color-text);
   right: -14px;
+}
+footer {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
